@@ -21,4 +21,4 @@ deploy: false
 test_script:
   - goxc -bc="linux, darwin, freebsd, windows"
   - go build
-  - ./azure-blob-uploader.exe -acount-name %ACCOUNT_NAME% -account-key %ACCOUNT_KEY% -c hoge -f azure-blob-uploader.exe
+  - azure-blob-uploader.exe -acount-name %ACCOUNT_NAME% -account-key %ACCOUNT_KEY% -c hoge -f azure-blob-uploader.exe
