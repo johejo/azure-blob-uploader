@@ -1,11 +1,10 @@
-language: objective-c
-osx_image: xcode9.3
-go_import_path: github.com/golang/dep
+os: osx
+go: 1.10.x
+env:
+  - TRAVIS_BUILD_DIR=$GOPATH/src
 install:
   - go version
-  - which go
-  - export GOPATH=$HOME/go
-  - go get -u github.com/golang/dep/cmd/dep
+  - go get -u github.com/Azure/azure-storage-blob-go/2017-07-29/azblob
   - go get -u github.com/laher/goxc
   - dep ensure
 
