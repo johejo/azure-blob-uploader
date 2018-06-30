@@ -1,8 +1,10 @@
 os: osx
+language: go
 go: 1.10.x
-env:
-  - TRAVIS_BUILD_DIR=$GOPATH/src
+
 install:
+  - go env
+  - echo $GOPATH
   - go version
   - go get -u github.com/Azure/azure-storage-blob-go/2017-07-29/azblob
   - go get -u github.com/laher/goxc
