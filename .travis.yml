@@ -3,6 +3,8 @@ osx_image: xcode9.3
 
 install:
   - go version
+  - which go
+  - export GOPATH=$HOME/go
   - go get -u github.com/golang/dep/cmd/dep
   - go get -u github.com/laher/goxc
   - dep ensure
