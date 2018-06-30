@@ -6,8 +6,9 @@ install:
   - go env
   - echo $GOPATH
   - go version
-  - go get -u github.com/Azure/azure-storage-blob-go/2017-07-29/azblob
+  - go get -u github.com/golang/dep/cmd/dep
   - go get -u github.com/laher/goxc
+  - $GOPATH/bin/dep ensure
 
 script:
   - goxc -bc="linux, darwin, freebsd, windows"
