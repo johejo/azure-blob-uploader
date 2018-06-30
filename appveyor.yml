@@ -3,7 +3,7 @@ environment:
   GOVERSION: 1.10.3
 
 install:
-  - appveyor DownloadFile https://dl.google.com/go/go%GOVERSION.windows-amd64.msi
+  - appveyor DownloadFile https://storage.googleapis.com/golang/go%GOVERSION%.windows-amd64.msi
   - msiexec /i go%GOVERSION%.windows-amd64.msi /q
   - set Path=c:\go\bin;c:\gopath\bin
   - go version

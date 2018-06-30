@@ -1,8 +1,9 @@
-sudo: false
 language: go
-go:
-  - 1.10.x
+osx_image: xcode9.3
+
 install:
+  - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  - brew install go
   - go get -u github.com/golang/dep/cmd/dep
   - go get -u github.com/laher/goxc
   - dep ensure
