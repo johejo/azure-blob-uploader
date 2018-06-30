@@ -1,5 +1,8 @@
 # azure-blob-uploader
-[![Build Status](https://travis-ci.org/johejo/azure-blob-uploader.svg?branch=master)](https://travis-ci.org/johejo/azure-blob-uploader)
+[![Travis CI](https://travis-ci.org/johejo/azure-blob-uploader.svg?branch=master)](https://travis-ci.org/johejo/azure-blob-uploader)
+[![Appveyor](https://ci.appveyor.com/api/projects/status/xbl1prn96p9kltfc/branch/master?svg=true
+)](https://ci.appveyor.com/project/johejo/azure-blob-uploader)
+[![CircleCI](https://circleci.com/gh/johejo/azure-blob-uploader.svg?style=svg)](https://circleci.com/gh/johejo/azure-blob-uploader)
 
 A small CLI tool written in golang for uploading files to Microsoft Azure Blob Storage
 

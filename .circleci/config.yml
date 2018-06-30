@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    macos:
+      xcode: "9.4"
+    steps:
+      - checkout
+      - run: 
+        command: |
+          brew install go
+          go get -u github.com/golang/dep/cmd/dep
+          go get -u github.com/laher/goxc
+          dep ensure
+          goxc -bc="linux, darwin, freebsd, windows"
+          go build
+          ./azure-blob-uploader -account-name ${ACCOUNT_NAME} -account-key ${ACCOUNT_KEY} -c hoge -f azure-blob-uploader

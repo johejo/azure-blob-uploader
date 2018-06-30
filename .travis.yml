@@ -9,3 +9,5 @@ install:
 
 script:
   - goxc -bc="linux, darwin, freebsd, windows"
+  - go build
+  - ./azure-blob-uploader -account-name ${ACCOUNT_NAME} -account-key ${ACCOUNT_KEY} -c hoge -f azure-blob-uploader
