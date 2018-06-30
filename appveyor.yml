@@ -1,3 +1,5 @@
+clone_folder: c:\gopath\src\github.com\johejo\azure-blob-uploader
+
 environment:
   GOPATH: c:\gopath
   GOVERSION: 1.10.3
@@ -5,6 +7,7 @@ environment:
 install:
   - appveyor DownloadFile https://storage.googleapis.com/golang/go%GOVERSION%.windows-amd64.msi
   - msiexec /i go%GOVERSION%.windows-amd64.msi /q
+  - choco install git
   - set Path=c:\go\bin;c:\gopath\bin
   - go version
   - go env
