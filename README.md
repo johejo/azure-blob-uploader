@@ -5,7 +5,7 @@ A small CLI tool written in golang for uploading files to Microsoft Azure Blob S
 
 ## Feature
 
-### Single binally
+### Single binary
 It does not depend on other components such as openssl and python like azure-cli.
 
 ### Small binary
