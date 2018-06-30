@@ -1,0 +1,4 @@
+.vscode
+debug
+azure-blob-uploader*
+vendor/
