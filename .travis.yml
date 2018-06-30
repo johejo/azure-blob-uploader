@@ -2,13 +2,13 @@ os: osx
 language: go
 go: 1.10.x
 
+env:
+  - PATH=$PATH:$GOPATH/bin
+
 install:
-  - go env
-  - echo $GOPATH
-  - go version
   - go get -u github.com/golang/dep/cmd/dep
   - go get -u github.com/laher/goxc
-  - $GOPATH/bin/dep ensure
+  - dep ensure
 
 script:
   - goxc -bc="linux, darwin, freebsd, windows"

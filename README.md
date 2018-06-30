@@ -27,7 +27,7 @@ $ go get github.com/johejo/azure-blob-uploader
 ### Build from source
 ```
 $ git clone https://github.com/johejo/azure-blob-uploader.git
-$ cd azure-blob-uploader
+$ cd azure-blob-uploader/
 $ go build
 ```
 
