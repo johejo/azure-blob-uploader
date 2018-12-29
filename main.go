@@ -10,7 +10,7 @@ import (
 	"net/url"
 	"os"
 
-  "github.com/Azure/azure-storage-blob-go/azblob"
+	"github.com/Azure/azure-storage-blob-go/azblob"
 )
 
 var (
@@ -67,7 +67,7 @@ func main() {
 
 	handleErrors(err)
 	u, _ := url.Parse(fmt.Sprintf("https://%s.blob.core.windows.net/%s/%s", accountName, containerName, fileName))
-  credential, _ := azblob.NewSharedKeyCredential(accountName, accountKey)
+	credential, _ := azblob.NewSharedKeyCredential(accountName, accountKey)
 	blockBlobURL := azblob.NewBlockBlobURL(*u, azblob.NewPipeline(credential, azblob.PipelineOptions{}))
 
 	ctx := context.Background()
