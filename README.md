@@ -13,14 +13,20 @@ It does not depend on other components such as openssl and python like azure-cli
 
 ## Install
 
-### go get
+### Build from source
 ```
-$ go get github.com/johejo/azure-blob-uploader
+$ git clone https://github.com/johejo/azure-blob-uploader.git
+$ cd azure-blob-uploader/
+$ go install
 ```
+
+### Pre-built binary
+
+[release page](https://github.com/johejo/azure-blob-uploader/releases)
 
 ## Usage
 ```
-$ ./azure-blob-uploader -accout-name <ACCOUNT_NAME> -account-key <ACCOUNT_KEY> -c <CONTAINER_NAME> -f <FILE>
+$ azure-blob-uploader -accout-name <ACCOUNT_NAME> -account-key <ACCOUNT_KEY> -c <CONTAINER_NAME> -f <FILE>
 ```
 
 ## Story
