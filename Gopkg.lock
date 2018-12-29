@@ -2,20 +2,24 @@
 
 
 [[projects]]
+  digest = "1:d2ccb697dc13c8fbffafa37baae97594d5592ae8f7e113471084137315536e2b"
   name = "github.com/Azure/azure-pipeline-go"
   packages = ["pipeline"]
+  pruneopts = "UT"
   revision = "7571e8eb0876932ab505918ff7ed5107773e5ee2"
   version = "0.1.7"
 
 [[projects]]
   branch = "master"
+  digest = "1:c4a5edf3b0f38e709a78dcc945997678a364c2b5adfd48842a3dd349c352f833"
   name = "github.com/Azure/azure-storage-blob-go"
-  packages = ["2017-07-29/azblob"]
-  revision = "67440baa31716bc29c9d0c48b1653f9afad3909b"
+  packages = ["azblob"]
+  pruneopts = "UT"
+  revision = "cf01652132ccc92af2b9da9d2de542b5b7eafc1d"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "737ca1477e935727d8c738c1e91e191f9493f23f3488d4b8898ce57075cf72f6"
+  input-imports = ["github.com/Azure/azure-storage-blob-go/azblob"]
   solver-name = "gps-cdcl"
   solver-version = 1
