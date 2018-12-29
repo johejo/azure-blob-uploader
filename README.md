@@ -11,24 +11,11 @@ A small CLI tool written in golang for uploading files to Microsoft Azure Blob S
 ### Single binary
 It does not depend on other components such as openssl and python like azure-cli.
 
-### Small binary
-For linux/amd64, the size is about 1.7 MB. (We're looking for ideas to further reduce the size.)
-
 ## Install
-
-### Binally
-Binally can be download from [release page](https://github.com/johejo/azure-blob-uploader/releases).
 
 ### go get
 ```
 $ go get github.com/johejo/azure-blob-uploader
-```
-
-### Build from source
-```
-$ git clone https://github.com/johejo/azure-blob-uploader.git
-$ cd azure-blob-uploader/
-$ go build
 ```
 
 ## Usage
@@ -41,7 +28,6 @@ I was ordered to upload files from a very old machine to Azure Blob Storage at a
 It was impossible to install azure-cli on that machine.  
 As a result I found an article by Toru Makabe and made an upload tool.  
 Because there may be people who are in trouble with other similar things, leave my deliverables here.  
-The executable file was compressed with GNU strip and UPX.
 
 ## Great appreciation
 Toru Makabe http://torumakabe.github.io/post/azblob_golang/
