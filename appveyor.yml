@@ -2,7 +2,7 @@ clone_folder: c:\gopath\src\github.com\johejo\azure-blob-uploader
 
 environment:
   GOPATH: c:\gopath
-  GOVERSION: 1.11.4
+  GOVERSION: 1.11.5
 
 install:
   - appveyor DownloadFile https://storage.googleapis.com/golang/go%GOVERSION%.windows-amd64.msi
