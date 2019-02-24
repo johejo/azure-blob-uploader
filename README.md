@@ -13,13 +13,6 @@ It does not depend on other components such as openssl and python like azure-cli
 
 ## Install
 
-### Build from source
-```
-$ git clone https://github.com/johejo/azure-blob-uploader.git
-$ cd azure-blob-uploader/
-$ go install
-```
-
 ### Pre-built binary
 
 [release page](https://github.com/johejo/azure-blob-uploader/releases)
@@ -29,7 +22,15 @@ $ go install
 $ azure-blob-uploader -accout-name <ACCOUNT_NAME> -account-key <ACCOUNT_KEY> -c <CONTAINER_NAME> -f <FILE>
 ```
 
-## Story
+### Build from source
+
+```
+$ git clone https://github.com/johejo/azure-blob-uploader.git
+$ cd azure-blob-uploader/
+$ go install
+```
+
+## Motivation
 I was ordered to upload files from a very old machine to Azure Blob Storage at a certain legacy project.  
 It was impossible to install azure-cli on that machine.  
 As a result I found an article by Toru Makabe and made an upload tool.  
