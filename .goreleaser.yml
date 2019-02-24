@@ -5,10 +5,20 @@ before:
     # you may remove this if you don't use vgo
     - go mod download
 builds:
-- env:
+  env:
   - CGO_ENABLED=0
+  goos:
+    - darwin
+    - linux
+    - windows
+    - freebsd
 archive:
+  format: tar.gz
+  format_overrides:
+    - goos: windows
+      format: zip
   replacements:
+    freebsd: FreeBSD
     darwin: Darwin
     linux: Linux
     windows: Windows
@@ -18,3 +28,5 @@ checksum:
   name_template: 'checksums.txt'
 snapshot:
   name_template: "{{ .Tag }}-next"
+release:
+  draft: true
